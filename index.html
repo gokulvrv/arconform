@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Overlay Contact Box</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="overlay-container">
+    <img src="./jcb.jpeg" alt="JCB" class="background-image" />
+
+    <div class="left-gradient"></div>
+    <div class="right-gradient"></div>
+
+    <div class="form-overlay">
+      <h2 class="gradient-heading">Get In Touch</h2>
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="Name" required />
+          <input type="tel" placeholder="Mobile" required />
+        </div>
+        <div class="form-row">
+          <input type="email" placeholder="Email" required />
+          <select required>
+            <option value="" disabled selected>Consulting</option>
+            <option value="delivery">Delivery</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Message"></textarea>
+
+        <div class="attachment-box">
+  <label for="file-upload">
+    <img src="./upload.png" alt="icon" class="attachment-icon" />
+    Attachments
+    <input type="file" id="file-upload" hidden />
+  </label>
+</div>
+
+
+        <button type="submit" class="contact-btn">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
